@@ -1,0 +1,717 @@
+// 特定语言下的指定内容样式特殊处理
+html:lang(se) {
+  .goods-price,
+  .price_show,
+  .goods-item-total-price,
+  .item-right,
+  .free-ship-progress-num,
+  .goods-price-add,
+  .prod-com-price,
+  .sym_price,
+  .line-total-box,
+  .subtotal,
+  .order-amount {
+    word-spacing: 3px;
+  }
+}
+
+//block居中
+.container {
+  .container();
+}
+
+.container2 {
+  .container2();
+}
+
+.over-hide {
+  overflow: hidden;
+}
+
+//浮动、清除浮动
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  display: block;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* 激发IE中的hasLayout属性 for IE8(Quirks)模式和IE6\7浏览器*/
+
+//文本
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+//vertical align
+.ver-middle {
+  vertical-align: middle;
+}
+
+.ver-top {
+  vertical-align: top;
+}
+
+.line-under {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.line-none {
+  text-decoration: none;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+//border
+.bdb-none {
+  border-bottom: none;
+}
+
+.bdn {
+  border: none;
+}
+
+//margin
+.m-a {
+  margin: auto;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+//显示、隐藏
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+//opacity
+.opa1 {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+
+.gray {
+  color: @gray;
+}
+
+.red {
+  color: @red;
+}
+
+//width
+.w160 {
+  width: 160px;
+}
+
+//break
+.nowrap {
+  white-space: nowrap;
+}
+
+//页面布局
+body {
+  background: @body-bg;
+  // min-width: 1280px;
+}
+
+.main {
+  .container();
+  padding: 9px 0 20px;
+  min-height: 535px;
+
+  &.wider_version {
+    .container3();
+  }
+}
+
+.ht-35 {
+  height: 20px;
+}
+
+.cat-left {
+  float: left;
+  width: 190px;
+}
+
+//模块边框
+.border-radius {
+  padding: 10px;
+  border: 1px solid #ccc;
+  .border-radius(5px);
+}
+
+.new-text-tip {
+  left: 50% !important;
+  right: auto !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  -webkit-transform: translateX(-50%) !important;
+  -ms-transform: translateX(-50%) !important;
+  transform: translateX(-50%) !important;
+}
+
+.text-tip {
+  display: none;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 101;
+  top: 100%;
+  left: -150px;
+  right: -150px;
+  text-align: center;
+
+  span {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    border: solid 1px #ccc;
+    .border-radius(4px);
+    padding: 4px 10px;
+    white-space: nowrap;
+    color: #231f1e;
+    font-family: @font-family-600;
+
+    &:before {
+      background: url('./../images/a_sprite_l_20190128.png') no-repeat -162px 0;
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 13px;
+      height: 8px;
+      top: -8px;
+      left: 50%;
+      margin-left: -6px;
+    }
+  }
+
+  a:hover &,
+  .selected &,
+  .cur & {
+    display: block;
+  }
+
+  a:hover & {
+    z-index: 1;
+  }
+
+  .selected &,
+  .cur & {
+    z-index: 0;
+  }
+}
+
+.text-blog {
+  display: none;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: -150px;
+  right: -150px;
+  text-align: center;
+
+  span {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    border: solid 1px #ccc;
+    .border-radius(4px);
+    padding: 4px 10px;
+    white-space: nowrap;
+    color: #231f1e;
+    font-family: @font-family-600;
+
+    &:before {
+      background: url('./../images/a_sprite_l_20190128.png') no-repeat -162px 0;
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 13px;
+      height: 8px;
+      top: -8px;
+      left: 75%;
+      margin-left: -6px;
+    }
+  }
+
+  a:hover &,
+  .selected &,
+  .cur & {
+    display: block;
+  }
+
+  a:hover & {
+    z-index: 1;
+  }
+
+  .selected &,
+  .cur & {
+    z-index: 0;
+  }
+}
+
+.horizontal-line {
+  clear: both;
+  border-bottom: 1px solid #e5e1e1;
+  margin: 20px 0px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: @font-size-small;
+
+  a {
+    color: @theme;
+  }
+}
+
+.common-title {
+  .font-large();
+  border-bottom: solid 1px var(--color-121212);
+  padding-bottom: 7px;
+}
+
+.swatch_enytry {
+  font-size: @font-size-small;
+  font-family: @font-family-sans-serif;
+  font-weight: normal;
+  transform: translateY(4px);
+  a {
+    color: @theme;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+//form
+button,
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+  padding: 10px 5px;
+  color: var(--color-121212);
+  background: #fff;
+  border: 1px solid @border-color;
+  outline: none;
+  &:focus {
+    background: #f0f0f0;
+  }
+
+  &.error,
+  .error & {
+    border-color: var(--color-ff0000);
+  }
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  height: 18px;
+  line-height: 18px;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--color-999999);
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--color-999999);
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--color-999999);
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--color-999999);
+}
+
+select {
+  line-height: 28px;
+
+  &.error {
+    border-color: #f00;
+  }
+}
+
+textarea {
+  line-height: 18px;
+}
+
+/*chrome 自动填写的表单背景是黄色*/
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/*scholarship*/
+.cms-about-mac-image {
+  background: url('./../images/scholarship/1.jpg');
+  width: 366px;
+  height: 330px;
+}
+
+.cms-science-fashion-image {
+  background: url('./../images/scholarship/2.jpg') no-repeat;
+  width: 372px;
+  height: 380px;
+}
+
+.cms-who-is-scholar-image {
+  background: url('./../images/scholarship/3.jpg');
+  width: 366px;
+  height: 410px;
+}
+
+.cms-how-to-apply-image {
+  background: url('./../images/scholarship/4.jpg') no-repeat;
+  width: 373px;
+  height: 420px;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+
+.able-select {
+  -webkit-user-select: all;
+  /* Chrome all / Safari all */
+  -moz-user-select: all;
+  /* Firefox all */
+  -ms-user-select: all;
+  /* IE 10+ */
+  user-select: all;
+  /* Likely future */
+}
+
+.icon-fav-wrapper.with-fav-counter {
+  width: 50px !important;
+  height: 33px !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  right: 0 !important;
+  top: 9px !important;
+
+  .icon-fav {
+    width: 33px !important;
+    height: 33px !important;
+    margin: 0 !important;
+
+    em {
+      left: initial !important;
+    }
+  }
+
+  span {
+    color: var(--color-999999);
+    font-size: 12px !important;
+
+    &[data-cat_id='2'] {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    i {
+      font-style: normal !important;
+    }
+  }
+
+  .sub_menu {
+    right: 3px !important;
+  }
+
+  .msg_bubble {
+    right: -56px !important;
+    top: 39px !important;
+  }
+}
+
+.body-overflow-hidden {
+  overflow: hidden;
+}
+
+.normal-width {
+  width: 1004px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  min-height: 535px;
+}
+
+.account-width {
+  min-width: 1263px;
+  max-width: 1353px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+  clear: both;
+  min-height: 535px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.no-pointer {
+  cursor: auto;
+}
+
+.help-menu-outbox {
+  display: flex;
+  margin: 60px auto 100px;
+  min-width: 1263px;
+  max-width: 1353px;
+  clear: both;
+  padding: 0 30px 0;
+  min-height: 535px;
+  color: var(--color-121212);
+  box-sizing: border-box;
+  & > .help-menu {
+    flex: 1;
+    margin-right: 40px;
+  }
+  & > .content {
+    width: 903px;
+  }
+  .common-title,
+  .title {
+    letter-spacing: 0;
+    font-size: 16px;
+    font-family: @font-family-600;
+    text-transform: uppercase;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 5px;
+  }
+}
+
+// animation
+
+.animation-fade-enter-active,
+.animation-fade-leave-active,
+.animation-slideflex-enter-active,
+.animation-slideflex-leave-active {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.animation-fade-enter-active {
+  animation-name: fadeIn;
+}
+.animation-fade-leave-active {
+  animation-name: fadeOut;
+}
+
+.animation-slideflex-enter-active {
+  animation-name: slideFlexIn;
+}
+.animation-slideflex-leave-active {
+  animation-name: slideFlexOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideFlexIn {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideFlexOut {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+// 骨架屏扫光备用
+.skeleton-animate::before {
+  content: '';
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  height: 150%;
+  width: 10px;
+  box-shadow: var(--color-f9f9f9);
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: rotate(20deg) translateY(-50%) translateX(-50%);
+  animation: skeleton-blink 1.5s ease-in-out 0.5s infinite;
+}
+
+@keyframes skeleton-blink {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 150%;
+  }
+}
+.theme-warning {
+  color: #f00;
+}
+.error-border {
+  border: solid 1px #f00 !important;
+}
+.theme-color {
+  color: @theme;
+}
+.theme-color-green {
+  color: @theme-green;
+}
+// todo: 展示含税提示样式
+.tax-incluse {
+  font-family: @font-family-500;
+  font-size: @font-size-base;
+  line-height: 18px;
+  color: #666;
+  // text-transform: uppercase;
+}
+.pt-6 {
+  padding-top: 6px;
+  color: var(--color-121212);
+}
+.tax-incluse-small {
+  font-size: 12px;
+  line-height: 16px;
+}
+.theme-btn-wrap {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 4px 0 #ccc;
+  box-shadow: 0 0 4px 0 #ccc;
+  z-index: 0;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+/* 左右抖动*/
+.animated-shake {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: shake;
+}
+
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-6px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(6px, 0, 0);
+  }
+}

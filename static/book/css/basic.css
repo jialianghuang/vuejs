@@ -1,0 +1,154 @@
+body {
+  /* overflow:hidden; */
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+}
+
+.magazine-viewport .container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 922px;
+  height: 600px;
+  margin: auto; 
+}
+
+.magazine-viewport .magazine {
+  width: 922px;
+  height: 600px;
+  left: -461px;
+  top: 0px !important;
+}
+
+.magazine-viewport .page {
+  width: 461px;
+  height: 600px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.magazine .page {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.magazine-viewport .page img {
+  user-select: none;
+  margin: 0;
+}
+
+.magazine .even .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: -webkit-gradient(linear, left top, right top, color-stop(0.95, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.2)));
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%); */
+}
+
+.magazine .odd .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: -webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.15)));
+  background-image: linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%); */
+}
+
+/* TODO: 图片加载中的loading */
+.magazine-viewport .loader {
+  background-image: url(../img/loader.gif);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  /* top: 280px;
+  left: 219px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.magazine-viewport .shadow {
+  transition: -ms-box-shadow 0.5s;
+  box-shadow: 0 0 20px #ccc;
+}
+
+.animated {
+  transition: margin-left 0.5s;
+}
+
+.exit-message {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 12;
+}
+
+.exit-message > div {
+  width: 140px;
+  height: 30px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font: 12px arial;
+  line-height: 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+.bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.magazine .single, .magazine .double {
+	width: calc(100% - 30px);
+	height: calc(50% - 100px);
+	margin: 0 15px;
+	position: absolute;
+	top: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+.magazine .single {
+	justify-content: center;
+}
+
+.magazine .single a, .magazine .double a {
+	height: 100%;
+	width: 45%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff !important;
+	font-size: 24px;
+	z-index: 12;
+}
+.magazine .hide {
+	display: none;
+}
+
+.magazine .book-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60px;
+	height: 100px;
+	transition: all 0.5s ease;
+	opacity: 0;
+	font-size: 32px;
+}
+.magazine .book-btn.previous {
+	left: -100px;
+	transform: rotate(180deg);
+}
+.magazine .book-btn.next {
+	right: -100px;
+}

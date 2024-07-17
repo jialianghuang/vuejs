@@ -1,0 +1,273 @@
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: @text-color;
+  font-size: @font-size-base;
+  line-height: normal;
+  font-family: @font-family-base;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+fieldset,
+img {
+  border: 0;
+}
+/*
+	TODO think about hanlding inheritence differently,maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+/*
+	TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
+*/
+li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+}
+input[type='submit'],
+button,
+input[type='button'] {
+  cursor: pointer;
+  font-family: @font-family-base;
+}
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+/*because legend doesn't inherit in IE */
+legend {
+  color: @text-color;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+map {
+  text-decoration: none;
+}
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+  display: block;
+}
+.goods-colors {
+  .sp_dusty_lavender_floral_print {
+    background-image: url('~assets/images/special_color/sp_dusty_lavender_floral_print_list.jpg');
+    background-size: cover;
+  }
+
+  .sp_red_floral_print {
+    background-image: url('~assets/images/special_color/sp_red_flora_print_list.jpg');
+    background-size: cover;
+  }
+
+  .sp_navy_blue_floral_print {
+    background-image: url('~assets/images/special_color/sp_navy_blue_floral_print_list.jpg');
+    background-size: cover;
+  }
+
+  .sp_white_floral_print {
+    background-image: url('~assets/images/special_color/sp_white_floral_print_list.jpg');
+    background-size: cover;
+  }
+
+  .sp_ivory\/champagne_\#9 {
+    background: url('~assets/images/special_color/sp_ivory_champagne_9_1.png');
+    background-size: cover;
+  }
+
+  .sp_burgundy_\#8 {
+    background: url('~assets/images/special_color/sp_burgundy_8_1.png');
+    background-size: cover;
+  }
+
+  .sp_royal_blue_\#7 {
+    background: url('~assets/images/special_color/sp_royal_blue_7_1.png');
+    background-size: cover;
+  }
+
+  .sp_navy_blue_\#5 {
+    background: url('~assets/images/special_color/sp_navy_blue_5_1.png');
+    background-size: cover;
+  }
+
+  .sp_burgundy_\#6 {
+    background: url('~assets/images/special_color/sp_burgundy_6_1.png');
+    background-size: cover;
+  }
+
+  .sp_red_floral_print_\#1 {
+    background: url('~assets/images/special_color/sp_red_floral_print_6_1.jpg');
+    background-size: cover;
+  }
+
+  .sp_dark_green_floral_print_\#11 {
+    background: url('~assets/images/special_color/sp_dark_green_floral_print_11_28.png');
+    background-size: cover;
+  }
+
+  .sp_ivory_\#9 {
+    background: url('~assets/images/special_color/sp_lvory_9_28.png');
+    background-size: cover;
+  }
+
+  .sp_navy_blue_floral_print_\#2 {
+    background: url('~assets/images/special_color/sp_navy_blue_floral_print_2_28.jpg');
+    background-size: cover;
+  }
+
+  .sp_navy_blue_polka_dot_\#14 {
+    background: url('~assets/images/special_color/sp_navy_blue_polka_dot_14_28.png');
+    background-size: cover;
+  }
+
+  .sp_navy_floral_print_\#13 {
+    background: url('~assets/images/special_color/sp_navy_floral_print_13_28.png');
+    background-size: cover;
+  }
+
+  .sp_slate_blue_\#12 {
+    background: url('~assets/images/special_color/sp_slate_blue_12_28.png');
+    background-size: cover;
+  }
+
+  .sp_white_floral_print_\#10 {
+    background: url('~assets/images/special_color/sp_white_floral_print_10_28.jpg');
+    background-size: cover;
+  }
+  .sp_white_floral_print_\#10{
+    background: url('~assets/images/special_color/sp_white_floral_print_new_10_28.png');
+    background-size: cover;
+  }
+  .sp_black_\#252527{
+    background: url('~assets/images/special_color/sp_black_252527_10_28.png');
+    background-size: cover;
+  }
+  .sp_blush_floral_print_\#fcb7ad{
+    background: url('~assets/images/special_color/sp_blush_floral_print_fcb7ad_10_28.png');
+    background-size: cover;
+  }
+  .sp_dark_navy_floral_print_\#1b1f3a{
+    background: url('~assets/images/special_color/sp_dark_navy_floral_print_1b1f3a_10_28.png');
+    background-size: cover;
+  }
+  .sp_black_\#18{
+    background: url('~assets/images/special_color/sp_black_18_28.jpg');
+    background-size: cover;
+  }
+  .sp_blush_\#17{
+    background: url('~assets/images/special_color/sp_blush_17_28.jpg');
+    background-size: cover;
+  }
+  .sp_dark_green_\#21{
+    background: url('~assets/images/special_color/sp_dark_green_21_28.jpg');
+    background-size: cover;
+  }
+  .sp_floral_metalic_\#19{
+    background: url('~assets/images/special_color/sp_floral_metalic_19_28.jpg');
+    background-size: cover;
+  }
+  .sp_navy_blue_\#20{
+    background: url('~assets/images/special_color/sp_navy_blue_20_28.jpg');
+    background-size: cover;
+  }
+  .sp_rose_gold_\#15{
+    background: url('~assets/images/special_color/sp_rose_gold_15_28.jpg');
+    background-size: cover;
+  }
+  .sp_rose_gold_\#16{
+    background: url('~assets/images/special_color/sp_rose_gold_16_28.jpg');
+    background-size: cover;
+  }
+}
+// @import "./color_hex.less";
+// @import "./color_hex_style.less";
+// @import "./new_special_color.less";

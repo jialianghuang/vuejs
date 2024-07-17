@@ -1,0 +1,8 @@
+[defaults]
+url = https://sentry.gaoyaya.com/ 
+org = sentry
+project = riven-az-pc
+
+[auth]
+token = c9edc9ba5665496abde802464334eb1f0947b5f63e7f4923815fefcc87e45f38
+

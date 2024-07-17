@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }} lang="en">
+  <head>
+    <link rel="dns-prefetch" href="//cdn-1.azazie.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="//static.criteo.net" />
+    <link rel="dns-prefetch" href="//s.pinimg.com" />
+    <link rel="shortcut icon" href="/favicon.ico?v=1.3" type="image/x-icon" />
+    <meta charset="utf-8" />
+
+    <script>
+      window.polarisOptions = { GoogleAnalyticsTrackingId: 'G-329098817', enableConsentManager: true, privacyCenterId: 'GPLYYPB2V' }
+    </script>
+    {{ HEAD }}
+    <!-- cookie banner style  -->
+    <style>
+      #polaris-consent-widgets .polaris-consent-widgets .polaris-button.polaris-preferences-fab {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body {{ BODY_ATTRS }}>
+    <svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+    </svg>
+    {{ APP }}
+    <div data-position="fixed">
+      <div id="fb-root"></div>
+      <noscript>
+        <img height="1" width="1" alt="facebook" src="https://www.facebook.com/tr?id=1910465385843193&ev=PageView&noscript=1" />
+      </noscript>
+      <script>
+        if (!window.is_chrome_lighthouse) {
+          ;(function(d, s, id) {
+            var js,
+              fjs = d.getElementsByTagName(s)[0]
+            if (d.getElementById(id)) {
+              return
+            }
+            js = d.createElement(s)
+            js.id = id
+            js.async = true
+            js.src = 'https://connect.facebook.net/en_US/all.js'
+            js.dataset.polarisConsent = 'statistics,marketing'
+            fjs.parentNode.insertBefore(js, fjs)
+          })(document, 'script', 'facebook-jssdk')
+          window.fbAsyncInit = function() {
+            window.FB.init({
+              appId: '3400562746935623',
+              cookie: true,
+              xfbml: true,
+              oauth: true,
+              status: false
+            })
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,365 @@
+// less 全局变量
+//color
+:root {
+  --color-1e1e1e: #1e1e1e;
+  --color-121212: #121212;
+  --color-e3bda1: #e3bda1;
+  --color-ede1d3: #ede1d3;
+  --color-f1e9e6: #f1e9e6;
+  --color-666666: #666666;
+  --color-999999: #999999;
+  --color-cccccc: #cccccc;
+  --color-eeeeee: #eeeeee;
+  --color-f9f9f9: #f9f9f9;
+  --color-ff0000: #ff0000;
+  --color-5fa452: #5fa452;
+  --color-fcfada: #fcfada;
+  --color-e2dcd3: #e2dcd3;
+  --color-dedcd6: #dedcd6;
+  --color-f2e9e6: #f2e9e6;
+  --color-ffffff: #ffffff;
+  --color-fcf7da: #fcf7da;
+  --color-fcf8f6: #fcf8f6;
+  --color-a7a7a7: #a7a7a7;
+}
+.bridal-theme {
+  --theme-color: #A7B0AD;
+  --title-color: #A7B0AD;
+  --border-color: var(--color-121212);
+  --btn-hover-color: var(--color-121212);
+  --btn-light-hover-color: var(--color-dedcd6);
+  --shadow-color: var(--color-f9f9f9);
+  --text-hover-color: var(--color-e2dcd3);
+  --text-color: #666;
+  --bg-color:var(--color-dedcd6);
+  --bg-light-color:#FAF9F1;
+  --a-color:var(--color-121212);
+  --title-font-family:'Ivy Mode Regular';
+  --title-font-size:16px;
+  --box-bg-color:#fdfbf1;
+  --box-border-color:#dae0de;
+}
+.bridal-theme-b {
+  --theme-color: var(--color-121212);
+  --title-color: var(--color-121212);
+  --border-color: var(--color-121212);
+  --btn-hover-color: var(--color-121212);
+  --btn-light-hover-color: var(--color-dedcd6);
+  --shadow-color: var(--color-f9f9f9);
+  --text-hover-color: var(--color-e2dcd3);
+  --text-color: #666;
+  --bg-color:var(--color-dedcd6);
+  --bg-light-color:#FAF9F1;
+  --a-color:var(--color-121212);
+  --title-font-family:'Ivy Mode Regular';
+  --title-font-size:16px;
+  --box-bg-color:#fdfbf1;
+  --box-border-color:#dae0de;
+}
+.azazie-theme {
+  --theme-color: var(--color-121212);
+  --title-color:var(--color-e3bda1);
+  --border-color: var(--color-cccccc);
+  --btn-hover-color: var(--color-1e1e1e);
+  --btn-light-hover-color: var(--color-ede1d3);
+  --shadow-color: var(--color-f9f9f9);
+  --text-hover-color:var(--color-ede1d3);
+  --text-color: var(--color-666666);
+  --bg-color:var(--color-f1e9e6);
+  --bg-light-color:#F1E9E6;
+  --a-color: var(--color-e3bda1);
+  --title-font-family: 'Neue Haas Grotesk Display Pro Medium';
+  --title-font-size:14px;
+  --box-bg-color:#fffdfd;
+  --box-border-color:#fbe6e9;
+}
+@theme-color: var(--theme-color);
+@title-color: var(--title-color);
+@border-color: var(--border-color);
+@btn-hover-color:var(--btn-hover-color);
+@btn-light-hover-color: var(--btn-light-hover-color);
+@shadow-color:  var(--shadow-color);
+@text-hover-color:  var(--text-hover-color);
+@text-light-hover-color:  var(--color-666666);
+@text-color: var(--text-color);
+@bg-color: var(--bg-color);
+@bg-light-color:var(--bg-light-color);
+@a-color: var(--a-color);
+@title-font-family: var(--title-font-family);
+@title-font-size: var(--title-font-size);
+@box-bg-color:var(--box-bg-color);
+@box-border-color:var(--box-border-color);
+
+@black-btn-color: var(--color-121212);
+@black-btn-hover-color: #050708 ;
+
+@gray-darker: var(--color-121212);
+@gray-dark: var(--color-121212);
+@gray: var(--color-666666);
+@gray-light: var(--color-999999);
+@gray-lighter: var(--color-eeeeee);
+@red: #900;
+
+@theme-hover: var(--color-1e1e1e);
+@theme-dark: #4d0e68;
+@theme: var(--color-121212);
+@theme-light: #f47898;
+@theme-green: var(--color-5fa452);
+@theme-bg-color:var(--color-ede1d3);
+@theme-btn-bgColor:var(--color-f1e9e6);
+
+@highlight: #b00;
+@highlight-light: #c00;
+@highlight-lighter: #d00;
+@highlight-lightest: var(--color-ff0000);
+
+// Scaffolding
+@body-bg: #fff;
+@text-color: @gray-dark;
+@theme-light-bg: var(--color-f1e9e6);
+
+// Links
+@link-color: @gray-darker;
+@link-hover-color: @theme;
+
+@error-color: #b94a48;
+
+/* ********* font family  ********* */
+// 100 thin
+// 300 light
+// 400 regular
+// 500 medium
+// 600 semibold
+// 700 bold
+// 900 black
+
+/*
+Open Sans(400)            --->   Neue Haas Grotesk Display Pro Medium(500)   ---> Neue Haas Grotesk Display Pro 55 Roman  --> Arimo Regular(400)
+Open Sans SemiBold(600)   --->   Neue Haas Grotesk Display Pro Semibold(600) ---> Neue Haas Grotesk Display Pro 65 Medium --> Arimo Regular Medium(600)
+Open Sans Bold(700)       --->   Neue Haas Grotesk Display Pro Bold(700)     ---> Neue Haas Grotesk Display Pro 75 Bold   --> Arimo Regular Bold(700)
+
+GFS Didot(400)            --->   Ivy Mode Regular(400)          --->  Italiana(400)
+GFS Didot Regular(400)    --->   Ivy Mode Regular(400)
+GFS Didot Bold(700)       --->   Ivy Mode Bold(700)
+*/
+
+.az-in-web {
+  --font-family: 'Neue Haas Grotesk Display Pro';
+  --font-family-400: 'Neue Haas Grotesk Display Pro Regular';
+  --font-family-500: 'Neue Haas Grotesk Display Pro Medium';
+  --font-family-600: 'Neue Haas Grotesk Display Pro Semibold';
+  --font-family-700: 'Neue Haas Grotesk Display Pro Bold';
+  --font-family-900: 'Neue Haas Grotesk Display Pro Black';
+  --font-Neue-Haas-Grotesk-Text-400: 'Neue Haas Grotesk Text Regular';
+  --font-Neue-Haas-Grotesk-Text-500: 'Neue Haas Grotesk Text Medium';
+  --font-Neue-Haas-Grotesk-Text-700: 'Neue Haas Grotesk Text Bold';
+  --font-Ivy-Mode: 'Ivy Mode';
+  --font-Ivy-Mode-400: 'Ivy Mode Regular';
+  --font-Ivy-Mode-600: 'Ivy Mode Semibold';
+  --font-Ivy-Mode-700: 'Ivy Mode Bold';
+}
+.az-in-app {
+  --font-family: 'Arimo';
+  --font-family-400: 'Arimo';
+  --font-family-500: 'Arimo Medium';
+  --font-family-600: 'Arimo SemiBold';
+  --font-family-700: 'Arimo Bold';
+  --font-family-900: 'Neue Haas Grotesk Display Pro Black';
+  --font-Neue-Haas-Grotesk-Text-400: 'Neue Haas Grotesk Text Regular';
+  --font-Neue-Haas-Grotesk-Text-500: 'Neue Haas Grotesk Text Medium';
+  --font-Neue-Haas-Grotesk-Text-700: 'Neue Haas Grotesk Text Bold';
+  --font-Ivy-Mode: 'Italiana';
+  --font-Ivy-Mode-400: 'Italiana';
+  --font-Ivy-Mode-600: 'Italiana';
+  --font-Ivy-Mode-700: 'Italiana';
+}
+
+@font-family-sans-serif: Arial, Helvetica, Verdana, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+@font-family-base: var(--font-family-500);
+
+@font-family: var(--font-family);
+@font-family-400: var(--font-family-400);
+@font-family-500: var(--font-family-500);
+@font-family-600: var(--font-family-600);
+@font-family-700: var(--font-family-700);
+@font-family-900: var(--font-family-900);
+
+@font-familys: var(--font-family), var(--font-family-400), var(--font-family-500), var(--font-family-600), var(--font-family-700);
+
+
+@font-Neue-Haas-Grotesk-Text-400: var(--font-Neue-Haas-Grotesk-Text-400);
+@font-Neue-Haas-Grotesk-Text-500: var(--font-Neue-Haas-Grotesk-Text-500);
+@font-Neue-Haas-Grotesk-Text-700: var(--font-Neue-Haas-Grotesk-Text-700);
+
+@font-Ivy-Mode: var(--font-Ivy-Mode);
+@font-Ivy-Mode-400: var(--font-Ivy-Mode-400);
+@font-Ivy-Mode-600: var(--font-Ivy-Mode-600);
+@font-Ivy-Mode-700: var(--font-Ivy-Mode-700);
+
+/* ********* font family  ********* */
+
+@font-size-small: 11px;
+@font-size-base: 13px;
+@font-size-large: 16px;
+@font-size-larger: 24px;
+
+@line-height-base: 15px;
+
+//wrap containner width
+@screen-width: 1004px;
+@screen-width-2: 1072px;
+@screen-width-3: 1353px;
+@z-index: 1; // 普通层级1-n 最大不要超过12
+@z-index-2: 2;
+@z-index-3: 3;
+@z-index-4: 4;
+@z-index-5: 5;
+@z-index-6: 6;
+@z-index-7: 7;
+@position-z-index: 8; // 定位层级
+@fixed-z-index: 11; // 固定定位层级 因为第三方插件层级都在10
+@popuy-z-index: 12; // 固定浮层层级
+
+//sns background position
+@sns-pos-y: -414px;
+//border radius:
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.border-shadow(@reg) {
+  -webkit-box-shadow: @reg;
+  -moz-box-shadow: @reg;
+  -ms-box-shadow: @reg;
+  box-shadow: @reg;
+}
+.box-shadow(@reg) {
+  -webkit-box-shadow: @reg;
+  -moz-box-shadow: @reg;
+  -ms-box-shadow: @reg;
+  box-shadow: @reg;
+}
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  transition: @transition;
+}
+.scale(@ratio) {
+  -webkit-transform: scale(@ratio);
+  -moz-transform: scale(@ratio); // IE9+
+  -ms-transform: scale(@ratio); // IE9+
+  transform: scale(@ratio);
+}
+.translate3d(@x; @y; @z) {
+  -webkit-transform: translate3d(@x, @y, @z);
+  transform: translate3d(@x, @y, @z);
+}
+.transform-origin(@origin) {
+  -webkit-transform-origin: @origin;
+  -moz-transform-origin: @origin;
+  transform-origin: @origin;
+}
+.backface-visibility(@visibility) {
+  -webkit-backface-visibility: @visibility;
+  -moz-backface-visibility: @visibility;
+  backface-visibility: @visibility;
+}
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~'alpha(opacity=@{opacity-ie})';
+}
+.background-size(@size) {
+  -webkit-background-size: @size;
+  -moz-background-size: @size;
+  -o-background-size: @size;
+  background-size: @size;
+}
+.background-clip(@reg) {
+  -webkit-background-clip: @reg;
+  -moz-background-clip: @reg;
+  background-clip: @reg;
+}
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+  -moz-box-sizing: @boxmodel;
+  box-sizing: @boxmodel;
+}
+.user-select(@model: none) {
+  -webkit-user-select: @model;
+  -moz-user-select: @model;
+  -ms-user-select: @model;
+}
+.animation(@reg) {
+  -webkit-animation: @reg;
+  -moz-animation: @reg;
+  animation: @reg;
+}
+.genVer() {
+  @last_v: ` '?' + Math.floor(new Date() .getTime() / 100000) .toString() .substr(1) `;
+}
+
+.container() {
+  width: @screen-width;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+.container2() {
+  width: @screen-width-2;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+.container3() {
+  width: @screen-width-3;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+.font-base-bold() {
+  //letter-spacing: 0.04em;
+  font-size: @font-size-base;
+  font-family: @font-family-600;
+}
+.font-large() {
+  letter-spacing: 1px;
+  font-size: @font-size-large;
+  font-family: @font-family-600;
+  text-transform: uppercase;
+}
+.font-larger() {
+  letter-spacing: 1px;
+  font-size: @font-size-larger;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.text-link(@color) {
+  color: @color;
+  &:hover {
+    color: var(--theme-color);
+  }
+}
+.theme-link(@color) {
+  color: @color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.inline-block() {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.text-justify() {
+  text-align: justify;
+  text-justify: distribute-all-lines; /*ie6-8*/
+  text-align-last: justify; /* ie9*/
+  -moz-text-align-last: justify; /*ff*/
+  -webkit-text-align-last: justify; /*chrome 20+*/
+}
